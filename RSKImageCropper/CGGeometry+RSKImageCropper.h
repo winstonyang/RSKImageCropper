@@ -28,7 +28,7 @@
 // tgmath functions aren't used on iOS when modules are enabled.
 // Open Radar - http://www.openradar.me/16744288
 // Work around this by redeclaring things here.
-
+/*
 #undef cos
 #define cos(__x) __tg_cos(__tg_promote1((__x))(__x))
 
@@ -65,6 +65,7 @@ __tg_promote2((__x), (__y))(__y))
     #define RSK_EPSILON FLT_EPSILON
     #define RSK_MIN FLT_MIN
 #endif
+*/
 
 // Line segments.
 struct RSKLineSegment {
