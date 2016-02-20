@@ -57,6 +57,7 @@ __tg_promote2((__x), (__y))(__y))
 
 #undef round
 #define round(__x) __tg_round(__tg_promote1((__x))(__x))
+*/
 
 #ifdef CGFLOAT_IS_DOUBLE
     #define RSK_EPSILON DBL_EPSILON
@@ -65,7 +66,7 @@ __tg_promote2((__x), (__y))(__y))
     #define RSK_EPSILON FLT_EPSILON
     #define RSK_MIN FLT_MIN
 #endif
-*/
+
 
 // Line segments.
 struct RSKLineSegment {
